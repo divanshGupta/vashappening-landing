@@ -105,10 +105,11 @@ export default function LandingPage() {
         {/* Feature visual - purple band as in screenshot */}
         <section className="py-12">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="bg-gradient-to-r from-purple-300 to-purple-200 rounded-md p-12">
+            <div className="bg-gradient-to-r from-purple-300 to-purple-200 rounded-md md:rounded-2xl overflow-hidden">
               {/* Replace this box with a mockup or image */}
-              <div className="max-w-3xl mx-auto">
-                <video autoPlay muted loop playsInline>
+              <div className="relative w-full h-[500px] overflow-hidden">
+                <video className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-md md:rounded-2xl"
+                autoPlay muted loop playsInline>
                     <source src="/video-1.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                     </video>
@@ -126,6 +127,18 @@ export default function LandingPage() {
             <h2 className="text-5xl font-extrabold mb-10">Projects</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              {/* Card 1 */}
+              <Link href='https://demo.vercel.store/'>
+                <article className="space-y-4">
+                    <div className="h-64 bg-gray-100 rounded overflow-hidden">
+                    {/* Replace with <Image/> optimized component */}
+                    <img src="/project-5.png" alt="project" className="w-full h-full object-cover" />
+                    </div>
+                    <h3 className="text-xl font-semibold">Acme Store - Modern Ecommerce</h3>
+                    <p className="text-gray-500">Blazingly Fast Ecom Store</p>
+                </article>
+              </Link>
+              
               {/* Card 1 */}
               <Link href='http://design-world.vercel.app'>
                 <article className="space-y-4">
@@ -146,6 +159,29 @@ export default function LandingPage() {
                     </div>
                     <h3 className="text-xl font-semibold">JK Adventure - A Travel Agency</h3>
                     <p className="text-gray-500">Travel, Adventure</p>
+                </article>
+              </Link>
+
+              {/* Card 2 */}
+              <Link href='http://pandeytuitions.vercel.app'>
+                <article className="space-y-4">
+                    <div className="h-64 bg-gray-100 rounded overflow-hidden">
+                    <img src="/project-3.png" alt="project" className="w-full h-full object-cover" />
+                    </div>
+                    <h3 className="text-xl font-semibold">Pandey Tuitions - Educational Organisation
+                    </h3>
+                    <p className="text-gray-500">Edtech - Education</p>
+                </article>
+              </Link>
+
+              {/* Card 2 */}
+              <Link href='http://wevstack.vercel.app'>
+                <article className="space-y-4">
+                    <div className="h-64 bg-gray-100 rounded overflow-hidden">
+                    <img src="/project-4.png" alt="project" className="w-full h-full object-cover" />
+                    </div>
+                    <h3 className="text-xl font-semibold">Wevstack - Tools Organiser</h3>
+                    <p className="text-gray-500">Tools, Saas, Front End</p>
                 </article>
               </Link>
 
