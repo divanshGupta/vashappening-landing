@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { CiMail } from "react-icons/ci";
 
 // Note: Replace image placeholders with your own images or next/image for optimization.
 export default function LandingPage() {
@@ -63,15 +64,16 @@ export default function LandingPage() {
             </div>
 
             <div className="flex items-center gap-4">
-              <a href='mailto:aainashaw556@gmail.com' className="hidden md:flex items-center gap-3 text-sm py-2 px-4 rounded-full border border-gray-200">
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 11-3.8-11.4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                Request a quote
+              <a href='mailto:aainashaw556@gmail.com' className="flex items-center gap-3 text-sm py-2 px-4 rounded-full border border-gray-200">
+                <CiMail size={20}/>
+                <span className='hidden md:block'>Request a quote</span>
               </a>
 
               {/* Mobile menu button (simple) */}
-              <button className="md:hidden p-2">
+              {/* <button className="md:hidden p-2">
                 <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><rect width="22" height="2" rx="1" fill="currentColor"/><rect y="6" width="22" height="2" rx="1" fill="currentColor"/><rect y="12" width="22" height="2" rx="1" fill="currentColor"/></svg>
-              </button>
+              </button> */}
+
             </div>
           </div>
         </div>
@@ -175,7 +177,7 @@ export default function LandingPage() {
               </Link>
 
               {/* Card 2 */}
-              <Link href='http://wevstack.vercel.app'>
+              {/* <Link href='http://wevstack.vercel.app'>
                 <article className="space-y-4">
                     <div className="h-64 bg-gray-100 rounded overflow-hidden">
                     <img src="/project-4.png" alt="project" className="w-full h-full object-cover" />
@@ -183,13 +185,15 @@ export default function LandingPage() {
                     <h3 className="text-xl font-semibold">Wevstack - Tools Organiser</h3>
                     <p className="text-gray-500">Tools, Saas, Front End</p>
                 </article>
-              </Link>
+              </Link> */}
 
               {/* Add more cards as needed */}
             </div>
 
-            <div className="mt-12 text-center">
-              <a href="#" className="inline-block bg-gray-900 text-white px-8 py-4 rounded-full">See all projects</a>
+            <div className='flex items-center justify-center'>
+              <Link href={"/services/"} className="mt-12 text-center">
+                <p className="inline-block bg-gray-900 text-white px-8 py-4 rounded-full">See all projects</p>
+              </Link>
             </div>
           </div>
         </section>
@@ -270,18 +274,18 @@ export default function LandingPage() {
                   <p className="text-gray-600">I’ve led development of Infijoy, ERP-School, and WAW. I’m ready to design your project’s architecture with scalability and security in mind.</p>
                 </div>
                 <div className="mt-6 self-start">
-                  <a href="mailto:aainashaw556@gmail.com" className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full">Request a quote</a>
+                  <a href="mailto:bc22031@smsvaranasi.in" className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full">Contact</a>
                 </div>
               </div>
 
               {/* Duplicate to simulate carousel */}
               <div className="bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-bold mb-4">Hi! I’m Rose, a passionate product designer</h3>
+                  <h3 className="text-2xl font-bold mb-4">Hi! I’m Kaustubh, a passionate product designer</h3>
                   <p className="text-gray-600">I help teams create intuitive interfaces and delightful user experiences.</p>
                 </div>
                 <div className="mt-6 self-start">
-                  <a href="mailto:aainashaw556@gmail.com" className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full">Request a quote</a>
+                  <a href="mailto:bc22031@smsvaranasi.in" className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full">Contact</a>
                 </div>
               </div>
 
@@ -291,7 +295,7 @@ export default function LandingPage() {
                   <p className="text-gray-600">I implement pixel-perfect responsive UI and help scale frontend architecture.</p>
                 </div>
                 <div className="mt-6 self-start">
-                  <a href="mailto:aainashaw556@gmail.com" className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full">Request a quote</a>
+                  <a href="mailto:bc22031@smsvaranasi.in" className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full">Contact</a>
                 </div>
               </div>
             </div>
