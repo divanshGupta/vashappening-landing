@@ -127,7 +127,7 @@ export default function LandingPage() {
               {/* Card 1 */}
               <Link href='https://demo.vercel.store/'>
                 <article className="space-y-4">
-                    <div className="h-64 bg-gray-100 rounded overflow-hidden">
+                    <div className="h-72 bg-gray-100 rounded overflow-hidden">
                     {/* Replace with <Image/> optimized component */}
                     <img src="/project-5.png" alt="project" className="w-full h-full object-cover" />
                     </div>
@@ -139,7 +139,7 @@ export default function LandingPage() {
               {/* Card 1 */}
               <Link href='http://design-world.vercel.app'>
                 <article className="space-y-4">
-                    <div className="h-64 bg-gray-100 rounded overflow-hidden">
+                    <div className="h-72 bg-gray-100 rounded overflow-hidden">
                     {/* Replace with <Image/> optimized component */}
                     <img src="/project-1.png" alt="project" className="w-full h-full object-cover" />
                     </div>
@@ -151,7 +151,7 @@ export default function LandingPage() {
               {/* Card 2 */}
               <Link href='http://jk-adventure.vercel.app'>
                 <article className="space-y-4">
-                    <div className="h-64 bg-gray-100 rounded overflow-hidden">
+                    <div className="h-72 bg-gray-100 rounded overflow-hidden">
                     <img src="/project-2.png" alt="project" className="w-full h-full object-cover" />
                     </div>
                     <h3 className="text-xl font-semibold">JK Adventure - A Travel Agency</h3>
@@ -162,7 +162,7 @@ export default function LandingPage() {
               {/* Card 2 */}
               <Link href='http://pandeytuitions.vercel.app'>
                 <article className="space-y-4">
-                    <div className="h-64 bg-gray-100 rounded overflow-hidden">
+                    <div className="h-72 bg-gray-100 rounded overflow-hidden">
                     <img src="/project-3.png" alt="project" className="w-full h-full object-cover" />
                     </div>
                     <h3 className="text-xl font-semibold">Pandey Tuitions - Educational Organisation
