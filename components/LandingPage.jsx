@@ -11,31 +11,26 @@ export default function LandingPage() {
         {
             id: 1,
             question: 'How much does it cost to develop an app?',
-            answer: 'On average, from $45,000 to $130,000. The exact price depends on the design complexity, number of features, and specific project requirements. Learn more about factors influencing the costs in our article. If you want to know the tailored quote for your project, leave your contacts below.',
+            answer: 'On average, from ₹25,000 to ₹120,000. The exact price depends on the design complexity, number of features, and specific project requirements. Learn more about factors influencing the costs in our article. If you want to know the tailored quote for your project, leave your contacts below.',
 
         }, 
         {
             id: 2,
             question: 'How long does it take to build an app?',
-            answer: 'On average, from 3 to 6 months. As with costs, the timeframe depends on the specific project requirements. Fill out the form and share your request with us. We’ll analyze it and provide an estimated cost and timeline.',     
+            answer: 'On average, from 1 to 3 months. As with costs, the timeframe depends on the specific project requirements. Fill out the form and share your request with us. We’ll analyze it and provide an estimated cost and timeline.',     
         },
         {
             id: 3,
-            question: 'Do you sign NDAs?',
-            answer: 'Yes, we do. If needed, we can sign the NDA before the first meeting.',      
-        },
-        {
-            id: 4,
             question: 'Can you work with my in-house team?',
             answer: 'Yes, we can integrate with your in-house team and collaborate on project tasks. In this article, we explain our approach to working with the client team, including the methodologies we use and examples from previous projects.',       
         },
         {
-            id: 5,
+            id: 4,
             question: 'How to ensure your code is high-quality?',
             answer: 'You can request an external audit of our code. We’ll give access to the code and provide project documentation for your external expert.',       
         },
         {
-            id: 6,
+            id: 5,
             question: 'What do I need to do before starting development?',
             answer:'After a kick-off meeting, we’ll provide you with a detailed estimate. It will include expenditures, the project timeline, a team members list, and the tech stack. We’ll walk you through every detail and answer your questions.',       
         },
@@ -207,7 +202,7 @@ export default function LandingPage() {
                 <p className="text-gray-700 leading-relaxed">We are a software development company that builds web and mobile products for startups and enterprises. Our team includes designers, product managers and engineers focused on shipping quality product fast.</p>
               </div>
               <div>
-                <div className="h-80 bg-gray-100 rounded overflow-hidden">
+                <div className="h-80 bg-gray-100 rounded-2xl overflow-hidden">
                   <img src="/about.jpeg" alt="about" className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -236,6 +231,7 @@ export default function LandingPage() {
                   <span className="px-6 py-3 bg-gray-100 rounded-full">UI/UX design</span>
                   <span className="px-6 py-3 bg-gray-100 rounded-full">Web design</span>
                   <span className="px-6 py-3 bg-gray-100 rounded-full">Mobile app design</span>
+                  <span className="px-6 py-3 bg-gray-100 rounded-full">Website redesign</span>
                 </div>
               </div>
 
@@ -245,6 +241,18 @@ export default function LandingPage() {
                   <span className="px-6 py-3 bg-gray-100 rounded-full">Mobile App Development</span>
                   <span className="px-6 py-3 bg-gray-100 rounded-full">Web development</span>
                   <span className="px-6 py-3 bg-gray-100 rounded-full">Custom software development</span>
+                  <span className="px-6 py-3 bg-gray-100 rounded-full">Software development for startups</span>
+                  <span className="px-6 py-3 bg-gray-100 rounded-full">Cross-platform development</span>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-medium mb-4">Deployment</h4>
+                <div className="flex flex-wrap gap-4">
+                  <span className="px-6 py-3 bg-gray-100 rounded-full">Hosting with domain</span>
+                  <span className="px-6 py-3 bg-gray-100 rounded-full">Website maintainence</span>
+                  <span className="px-6 py-3 bg-gray-100 rounded-full">Security</span>
+                  <span className="px-6 py-3 bg-gray-100 rounded-full">Google page ranking</span>
                 </div>
               </div>
             </div>
@@ -268,9 +276,9 @@ export default function LandingPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Team Card */}
-              <div className="bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between">
+              <div className="bg-white p-8 rounded-2xl shadow-sm flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-bold mb-4">Hi! I’m Sarthak, a seasoned team lead who builds robust backend architectures</h3>
+                  <h3 className="text-2xl font-bold mb-4">Hi! I’m Ashish, a seasoned team lead who builds robust backend architectures</h3>
                   <p className="text-gray-600">I’ve led development of Infijoy, ERP-School, and WAW. I’m ready to design your project’s architecture with scalability and security in mind.</p>
                 </div>
                 <div className="mt-6 self-start">
@@ -279,9 +287,9 @@ export default function LandingPage() {
               </div>
 
               {/* Duplicate to simulate carousel */}
-              <div className="bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between">
+              <div className="bg-white p-8 rounded-2xl shadow-sm flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-bold mb-4">Hi! I’m Kaustubh, a passionate product designer</h3>
+                  <h3 className="text-2xl font-bold mb-4">Hi! I’m Divyansh, a passionate product designer</h3>
                   <p className="text-gray-600">I help teams create intuitive interfaces and delightful user experiences.</p>
                 </div>
                 <div className="mt-6 self-start">
@@ -289,10 +297,10 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between">
+              <div className="bg-white p-8 rounded-2xl shadow-sm flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-bold mb-4">Hi! I’m Divyansh, senior frontend engineer</h3>
-                  <p className="text-gray-600">I implement pixel-perfect responsive UI and help scale frontend architecture.</p>
+                  <h3 className="text-2xl font-bold mb-4">Hi! I’m Manjeet, Digital Marketing Lead</h3>
+                  <p className="text-gray-600">Expert in website optimisation and marketing.</p>
                 </div>
                 <div className="mt-6 self-start">
                   <a href="mailto:bc22031@smsvaranasi.in" className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full">Contact</a>
