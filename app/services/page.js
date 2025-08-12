@@ -22,7 +22,7 @@ export default function Projects() {
                 </Link>
                 
                 {/* Card 1 */}
-                <Link href='http://design-world.vercel.app'>
+                <Link href='https://design-world.vercel.app'>
                     <article className="space-y-4">
                         <div className="h-72 bg-gray-100 rounded overflow-hidden">
                         {/* Replace with <Image/> optimized component */}
@@ -34,7 +34,7 @@ export default function Projects() {
                 </Link>
 
                 {/* Card 2 */}
-                <Link href='http://jk-adventure.vercel.app'>
+                <Link href='https://jk-adventure.vercel.app'>
                     <article className="space-y-4">
                         <div className="h-72 bg-gray-100 rounded overflow-hidden">
                         <img src="/project-2.png" alt="project" className="w-full h-full object-cover" />
@@ -45,7 +45,7 @@ export default function Projects() {
                 </Link>
 
                 {/* Card 2 */}
-                <Link href='http://pandeytuitions.vercel.app'>
+                <Link href='https://pandeytuitions.vercel.app'>
                     <article className="space-y-4">
                         <div className="h-72 bg-gray-100 rounded overflow-hidden">
                         <img src="/project-3.png" alt="project" className="w-full h-full object-cover" />
@@ -57,7 +57,7 @@ export default function Projects() {
                 </Link>
 
                 {/* Card 2 */}
-                <Link href='http://wevstack.vercel.app'>
+                <Link href='https://wevstack.vercel.app'>
                     <article className="space-y-4">
                         <div className="h-72 bg-gray-100 rounded overflow-hidden">
                         <img src="/project-4.png" alt="project" className="w-full h-full object-cover" />
@@ -66,6 +66,18 @@ export default function Projects() {
                         <p className="text-gray-500">Tools, Saas, Front End</p>
                     </article>
                 </Link>
+
+                {/* Card 2 */}
+              <Link href='https://girja-masala.vercel.app/'>
+                <article className="space-y-4">
+                    <div className="h-72 bg-gray-100 rounded overflow-hidden">
+                    <img src="/project-6.png" alt="project" className="w-full h-full object-cover" />
+                    </div>
+                    <h3 className="text-xl font-semibold">Girja Masala Kendra - Bulk Ecommerce
+                    </h3>
+                    <p className="text-gray-500">Wholesaler - Ecommerce</p>
+                </article>
+              </Link>
 
                 {/* Add more cards as needed */}
                 </div>
