@@ -3,6 +3,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { CiMail } from "react-icons/ci";
+import ProjectCard from './ProjectCard';
+import { projects } from '@/lib/projects'
+import Footer from './Footer';
 
 // Note: Replace image placeholders with your own images or next/image for optimization.
 export default function LandingPage() {
@@ -125,64 +128,9 @@ export default function LandingPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {/* Card 1 */}
-              <Link href='https://demo.vercel.store/'>
-                <article className="space-y-4">
-                    <div className="h-72 bg-gray-100 rounded overflow-hidden">
-                    {/* Replace with <Image/> optimized component */}
-                    <img src="/project-5.png" alt="project" className="w-full h-full object-cover" />
-                    </div>
-                    <h3 className="text-xl font-semibold">Acme Store - Modern Ecommerce</h3>
-                    <p className="text-gray-500">Blazingly Fast Ecom Store</p>
-                </article>
-              </Link>
-              
-              {/* Card 1 */}
-              <Link href='https://design-world.vercel.app'>
-                <article className="space-y-4">
-                    <div className="h-72 bg-gray-100 rounded overflow-hidden">
-                    {/* Replace with <Image/> optimized component */}
-                    <img src="/project-1.png" alt="project" className="w-full h-full object-cover" />
-                    </div>
-                    <h3 className="text-xl font-semibold">Design World — An Ecommerce Brand</h3>
-                    <p className="text-gray-500">Design World is merchandise brand, curated by their own customers.</p>
-                </article>
-              </Link>
-
-              {/* Card 2 */}
-              <Link href='https://jk-adventure.vercel.app'>
-                <article className="space-y-4">
-                    <div className="h-72 bg-gray-100 rounded overflow-hidden">
-                    <img src="/project-2.png" alt="project" className="w-full h-full object-cover" />
-                    </div>
-                    <h3 className="text-xl font-semibold">JK Adventure - A Travel Agency</h3>
-                    <p className="text-gray-500">Travel, Adventure</p>
-                </article>
-              </Link>
-
-              {/* Card 2 */}
-              <Link href='https://pandeytuitions.vercel.app'>
-                <article className="space-y-4">
-                    <div className="h-72 bg-gray-100 rounded overflow-hidden">
-                    <img src="/project-3.png" alt="project" className="w-full h-full object-cover" />
-                    </div>
-                    <h3 className="text-xl font-semibold">Pandey Tuitions - Educational Organisation
-                    </h3>
-                    <p className="text-gray-500">Edtech - Education</p>
-                </article>
-              </Link>
-
-              {/* Card 2 */}
-              {/* <Link href='http://wevstack.vercel.app'>
-                <article className="space-y-4">
-                    <div className="h-64 bg-gray-100 rounded overflow-hidden">
-                    <img src="/project-4.png" alt="project" className="w-full h-full object-cover" />
-                    </div>
-                    <h3 className="text-xl font-semibold">Wevstack - Tools Organiser</h3>
-                    <p className="text-gray-500">Tools, Saas, Front End</p>
-                </article>
-              </Link> */}
-
-              {/* Add more cards as needed */}
+              {projects.filter(project => project.isFeatured).map((project, idx) => (
+                <ProjectCard key={idx} project={project} />
+              ))}
             </div>
 
             <div className='flex items-center justify-center'>
@@ -371,41 +319,7 @@ export default function LandingPage() {
         </section>
 
         {/* Footer */}
-        <footer className="border-t py-12">
-          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-2xl font-bold">// Vashappening Media</h3>
-              <p className="mt-4 text-gray-600">Software development company</p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Technologies</h4>
-              <ul className="space-y-2 text-gray-600">
-                <li>React Native</li>
-                <li>React.js</li>
-                <li>Next.js</li>
-                <li>Flutter</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-600">
-                <li>Mobile App Development</li>
-                <li>Web Development</li>
-                <li>UI/UX design services</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="font-medium">+91 8127388337</p>
-              <p className="text-gray-600 mt-2">connect@vashappening.com</p>
-              <p className="text-gray-600 mt-2">D-Block, IT Colony, Ambalpadi</p>
-              <p className="text-gray-600 mt-2">576103, Udupi, Karnataka</p>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </div>
   )
